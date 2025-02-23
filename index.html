@@ -43,7 +43,7 @@
                     const longitude = position.coords.longitude;
 
                     // Send location to the backend
-                    fetch('http://localhost:3000/send-sos', {  // Ensure backend is running
+                    fetch('https://pradip-garai.github.io/sOS/', {  // Ensure backend is running
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ latitude, longitude })
